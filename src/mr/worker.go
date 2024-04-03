@@ -55,7 +55,6 @@ func Worker(
 
 	for {
 		t := CallGetTask()
-		// fmt.Println(t)
 		if t.shutdown {
 			return
 		}
