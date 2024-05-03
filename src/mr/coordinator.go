@@ -27,8 +27,6 @@ type state struct {
 	index      int // The worker index
 }
 
-// Your code here -- RPC handlers for the worker to call.
-
 // (Worker, task, file)
 func (c *Coordinator) assign_map_task(i int) {
 	c.map_status[i].state = "Processing"
